@@ -92,10 +92,10 @@ a:hover {
 #menu {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 0;
+  margin: -1000px 0 0  0;
   padding: 50px;
-  padding-top: 125px;
-  right: -100px;
+  padding-top: -125px;
+  right: 0;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
