@@ -885,9 +885,6 @@ table {
       color: #fff; }
 
 /* Section/Article */
-section, article {
-  margin-bottom: 3em; }
-
 section > :last-child,
 article > :last-child,
 section:last-child,
@@ -1383,7 +1380,7 @@ body > article {
     border: none;
     padding: 0; }
 
-/* Feature */
+/* Block 10 */
 .card {
   position: relative;
   height: 20em; }
@@ -1439,5 +1436,22 @@ body > article {
       padding-left: 0; }
   .card.long .pic-card {
     padding-top: 0; }
+
+/* header li */
+.pluses ul {
+  list-style-image: url("../images/checkbox.svg"); }
+.pluses li {
+  position: relative;
+  list-style: none;
+  padding-left: 40px; }
+.pluses li::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-img: url("../images/checkbox.svg");
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

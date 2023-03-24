@@ -387,10 +387,6 @@ table {
 
 /* Section/Article */
 
-section, article {
-  margin-bottom: 3em;
-}
-
 section > :last-child,
 article > :last-child,
 section:last-child,
@@ -1070,7 +1066,7 @@ body > article {
   }
 }
 
-/* Feature */
+/* Block 10 */
 
 .card {
   position: relative;
@@ -1162,5 +1158,28 @@ body > article {
     .pic-card {
       padding-top: 0;
     }
+  }
+}
+
+/* header li */
+
+.pluses {
+  ul {
+    list-style-image: url("../images/checkbox.svg");
+  }
+  li {
+    position: relative;
+    list-style: none;
+    padding-left: 40px;
+  }
+  li::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-img: url("../images/checkbox.svg");
+    background-size: cover;
   }
 }
