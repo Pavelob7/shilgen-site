@@ -27,7 +27,7 @@
                     <span class="image fit"><img src="images/pic00.jpg" alt=""/></span>
                 </div>
                 <div class="col-8 col-7-large col-12-medium">
-                        <h1>Привет! Я <strong>Шилов Геннадий</strong>.</h1>
+                    <h1 id="header-h1">Привет! Я <strong>Шилов Геннадий</strong>.</h1>
                     <ul class="pluses">
                         <li>Продвину лучше и дешевле, чем в агентстве</li>
                         <li>Предоставлю оперативную связь и быстрый результат</li>
@@ -473,8 +473,8 @@
 
     <section id="portfolio" class="wrapper style3">
         <div class="container">
-                <h2>Here’s some stuff I made recently.</h2>
-                <p>Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.</p>
+            <h2>Here’s some stuff I made recently.</h2>
+            <p>Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.</p>
             <div class="row">
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
@@ -532,25 +532,58 @@
 <!-- Footer -->
 
 
+<!--
+
+Имя
+
+Номер телефона
+
+Телеграмм для связи
+
+на каком (-их) маркетплейсах продаёте или планируете продавать?(ВБ, ОЗОН, Яндекс.маркет)
+
+Артикулы товара для анализа(можно ссылками)?Ссылки на действующие магазины
+
+Что нужно в первую очередь?- анализ ситуации- проработать сео- план работ по продвижению- напишу самТекущая ситуация,
+постановка задачи ( textarea)
+-->
+
 <footer>
     <section id="contact" class="wrapper style4">
         <div class="container medium">
             <header>
-                <h2>Have me make stuff for you.</h2>
-                <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
+                <h2>Наш бриф</h2>
+                <p>Пожалуйста, заполните бриф</p>
             </header>
             <div class="row">
                 <div class="col-12">
                     <form method="post" action="#">
                         <div class="row">
                             <div class="col-6 col-12-small">
-                                <input type="text" name="name" id="name" placeholder="Name"/>
+                                <input type="text" name="name" id="name" placeholder="Имя"/>
                             </div>
                             <div class="col-6 col-12-small">
-                                <input type="text" name="email" id="email" placeholder="Email"/>
+                                <input minlength="10" type="tel" name="tel" id="tel" placeholder="Номер телефона"/>
                             </div>
                             <div class="col-12">
-                                <input type="text" name="subject" id="subject" placeholder="Subject"/>
+                                <input type="text" name="subject" id="subject" placeholder="Ваш telegram"/>
+                            </div>
+                            <div class="col-12">
+                                <div class="checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
+                                    <label for="color-1">Яндекс.маркет</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="red">
+                                    <label for="color-2">Wildberries</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="brown">
+                                    <label for="color-3">Ozon</label>
+                                </div>
+
                             </div>
                             <div class="col-12">
                                 <textarea name="message" id="message" placeholder="Message"></textarea>
@@ -568,5 +601,7 @@
         </div>
     </section>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
