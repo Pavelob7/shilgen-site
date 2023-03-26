@@ -1522,4 +1522,15 @@ input[type=checkbox] {
   float: left;
   color: #ffffff !important; }
 
+.left-label {
+  margin-top: 1em;
+  text-align: left; }
+
+#last {
+  margin-top: 5em;
+  margin-bottom: 5em; }
+  #last .button {
+    margin: auto;
+    width: 400px; }
+
 /*# sourceMappingURL=main.css.map */
