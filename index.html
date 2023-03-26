@@ -551,45 +551,53 @@
 <footer>
     <section id="contact" class="wrapper style4">
         <div class="container medium">
-            <header>
-                <h2>Наш бриф</h2>
-                <p>Пожалуйста, заполните бриф</p>
-            </header>
+            <h2>Наш бриф</h2>
+            <p>Пожалуйста, заполните бриф</p>
             <div class="row">
                 <div class="col-12">
                     <form method="post" action="#">
                         <div class="row">
                             <div class="col-6 col-12-small">
-                                <input type="text" name="name" id="name" placeholder="Имя"/>
+                                <input type="text" name="name" id="name" placeholder="Имя" required>
                             </div>
                             <div class="col-6 col-12-small">
-                                <input minlength="10" type="tel" name="tel" id="tel" placeholder="Номер телефона"/>
+                                <input minlength="10" type="tel" name="tel" id="tel" placeholder="Номер телефона"
+                                       required>
                             </div>
                             <div class="col-12">
-                                <input type="text" name="subject" id="subject" placeholder="Ваш telegram"/>
+                                <input type="text" name="subject" id="subject" placeholder="Ваш telegram" required>
                             </div>
                             <div class="col-12">
+                                <label for="link">Пожалуйста, выберите площадки, где размещаетесь:</label>
                                 <div class="checkbox">
-                                    <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
+                                    <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1"
+                                           value="indigo">
                                     <label for="color-1">Яндекс.маркет</label>
                                 </div>
 
                                 <div class="checkbox">
-                                    <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="red">
+                                    <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2"
+                                           value="red">
                                     <label for="color-2">Wildberries</label>
                                 </div>
 
                                 <div class="checkbox">
-                                    <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="brown">
+                                    <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3"
+                                           value="brown">
                                     <label for="color-3">Ozon</label>
                                 </div>
-
                             </div>
                             <div class="col-12">
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                <label for="link">Введите цифры или URL:</label>
+                                <input type="text" id="link" name="link"
+                                       placeholder="Артикулы товара для анализа (можно ссылками)? Ссылки на действующие магазины"
+                                       pattern="\d+|https?://[^\s/$.?#].[^\s]*" required>
                             </div>
                             <div class="col-12">
-                                <a href="#contact" class="button large scrolly">Get in touch with me</a>
+                                <textarea name="message" id="message" placeholder="Что нужно в первую очередь? &#10; -Анализ ситуации? &#10; -Проработать сео? &#10; -План работ по продвижению?"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <a href="#contact" class="button large scrolly">Отправить</a>
                             </div>
                         </div>
                     </form>

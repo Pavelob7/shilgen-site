@@ -290,7 +290,7 @@ footer {
 
 form {
   label {
-    color: #3e3e3e;
+    color: #9b9b9b;
     font-weight: 700;
     display: block;
     margin: 0 0 0.5em 0;
@@ -313,6 +313,7 @@ form {
     color: #bbb;
     box-shadow: inset 0 2px 3px 1px rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.025);
     width: 100%;
+    resize: none;
 
     &:focus {
       background: #fafafa;
@@ -331,19 +332,19 @@ form {
   }
 
   ::-webkit-input-placeholder {
-    color: #555 !important;
+    color: #989898 !important;
   }
 
   :-moz-placeholder {
-    color: #555 !important;
+    color: #989898 !important;
   }
 
   ::-moz-placeholder {
-    color: #555 !important;
+    color: #989898 !important;
   }
 
   :-ms-input-placeholder {
-    color: #555 !important;
+    color: #989898 !important;
   }
 
   ::-moz-focus-inner {
