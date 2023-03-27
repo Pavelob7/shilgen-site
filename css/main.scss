@@ -213,6 +213,7 @@ header {
 
 footer {
   margin: 3em 0 0 0;
+  background-color: #171311;
 
   > p {
     font-size: 1.25em;
@@ -227,7 +228,7 @@ footer {
   width: 1200px;
 
   &.medium {
-    width: (1200px * 0.75);
+    width: (1200px * 1);
   }
 
   @include breakpoint('<=xlarge') {
@@ -242,7 +243,7 @@ footer {
     width: 960px;
 
     &.medium {
-      width: (960px * 0.75);
+      width: (960px * 1);
     }
   }
 
@@ -250,13 +251,13 @@ footer {
     width: 100%;
 
     &.medium {
-      width: (100% * 0.75);
+      width: (100% * 0.85);
     }
   }
 
   @include breakpoint('<=small') {
     width: 100%;
-    max-width: calc(100% - 30px);
+    max-width: calc(100% - 20px);
 
     &.medium {
       width: 100%;
@@ -737,7 +738,7 @@ body > article {
   }
 }
 
-#contact {
+.contact {
   footer {
     font-size: 0.9em;
   }
@@ -748,8 +749,9 @@ body > article {
 #copyright {
   color: #666;
   font-size: 1em;
-  line-height: 1em;
+  line-height: 3em;
   list-style: none;
+  padding-top: 1em;
   padding-left: 0;
   margin-bottom: 0;
 
@@ -1021,7 +1023,7 @@ body > article {
     }
   }
 
-  #contact {
+  .contact {
     footer {
       margin: 0;
     }
@@ -1163,6 +1165,7 @@ body > article {
   ul {
     list-style-image: url("../images/check.svg");
   }
+
   li {
     position: relative;
     list-style: none;
@@ -1170,6 +1173,7 @@ body > article {
     margin-bottom: 5px;
     text-align: left;
   }
+
   li::before {
     position: absolute;
     content: '';
@@ -1185,11 +1189,6 @@ body > article {
 #header-h1 {
   line-height: 1em;
 }
-
-
-
-
-
 
 
 input[type=checkbox] {
@@ -1208,14 +1207,14 @@ input[type=checkbox] {
   color: #ffffff !important;
 }
 
-.custom-checkbox+label {
+.custom-checkbox + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
   cursor: pointer;
 }
 
-.custom-checkbox+label::before {
+.custom-checkbox + label::before {
   content: '';
   display: inline-block;
   width: 1em;
@@ -1230,30 +1229,30 @@ input[type=checkbox] {
   background-size: 50% 50%;
 }
 
-.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: #ff8962;
 }
 
-.custom-checkbox:not(:disabled):active+label::before {
+.custom-checkbox:not(:disabled):active + label::before {
   background-color: #ff8962;
   border-color: #d57150;
 }
 
-.custom-checkbox:focus+label::before {
+.custom-checkbox:focus + label::before {
   box-shadow: 0 0 0 0.2rem rgba(245, 94, 44, 0.4);
 }
 
-.custom-checkbox:focus:not(:checked)+label::before {
+.custom-checkbox:focus:not(:checked) + label::before {
   border-color: #f55e2c;
 }
 
-.custom-checkbox:checked+label::before {
+.custom-checkbox:checked + label::before {
   border-color: #f55e2c;
   background-color: #f55e2c;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
-.custom-checkbox:disabled+label::before {
+.custom-checkbox:disabled + label::before {
   background-color: #e9ecef;
 }
 
@@ -1264,19 +1263,65 @@ input[type=checkbox] {
   color: #ffffff !important;
 }
 
+
 .left-label {
   margin-top: 1em;
   text-align: left;
+  padding-left: 1em;
+}
+
+.button {
+  margin: auto;
+  width: 400px;
 }
 
 
-#last {
-  margin-top: 5em;
-  margin-bottom: 5em;
+#contact {
+  padding: 0;
 
+  .footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.8em;
+    text-align: left;
 
-  .button {
-    margin: auto;
-    width: 400px;
+    h2 {
+      display: block;
+      font-weight: lighter;
+      margin-bottom: 2em;
+    }
+
+    p {
+      margin-bottom: 0.8em;
+    }
+
+    .footer-left {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      button {
+        border: none;
+        border-radius: 4px;
+        margin-top: 20px;
+        cursor: pointer;
+        width: calc(100% - 1em);
+        align-items: center;
+        margin-left: 0.5em;
+        font-size: 1em;
+      }
+    }
+
+    .footer-right {
+      width: 55%;
+      justify-content: flex-end;
+    }
+
+    .table-contact {
+      padding-right: 0.5em;
+      width: 5em;
+    }
   }
 }

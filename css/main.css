@@ -152,7 +152,8 @@ header {
     margin: 0; }
 
 footer {
-  margin: 3em 0 0 0; }
+  margin: 3em 0 0 0;
+  background-color: #171311; }
   footer > p {
     font-size: 1.25em; }
 
@@ -162,7 +163,7 @@ footer {
   max-width: calc(100% - 50px);
   width: 1200px; }
   .container.medium {
-    width: 900px; }
+    width: 1200px; }
   @media screen and (max-width: 1680px) {
     .container {
       width: 1200px; }
@@ -172,16 +173,16 @@ footer {
     .container {
       width: 960px; }
       .container.medium {
-        width: 720px; } }
+        width: 960px; } }
   @media screen and (max-width: 980px) {
     .container {
       width: 100%; }
       .container.medium {
-        width: 75%; } }
+        width: 85%; } }
   @media screen and (max-width: 736px) {
     .container {
       width: 100%;
-      max-width: calc(100% - 30px); }
+      max-width: calc(100% - 20px); }
       .container.medium {
         width: 100%; } }
 
@@ -1169,15 +1170,16 @@ body > article {
     #top p a {
       color: inherit; }
 
-#contact footer {
+.contact footer {
   font-size: 0.9em; }
 
 /* Copyright */
 #copyright {
   color: #666;
   font-size: 1em;
-  line-height: 1em;
+  line-height: 3em;
   list-style: none;
+  padding-top: 1em;
   padding-left: 0;
   margin-bottom: 0; }
   #copyright li {
@@ -1358,7 +1360,7 @@ body > article {
     #top p {
       font-size: 1em; }
 
-  #contact footer {
+  .contact footer {
     margin: 0; }
 
   /* Copyright */
@@ -1524,13 +1526,46 @@ input[type=checkbox] {
 
 .left-label {
   margin-top: 1em;
-  text-align: left; }
+  text-align: left;
+  padding-left: 1em; }
 
-#last {
-  margin-top: 5em;
-  margin-bottom: 5em; }
-  #last .button {
-    margin: auto;
-    width: 400px; }
+.button {
+  margin: auto;
+  width: 400px; }
+
+#contact {
+  padding: 0; }
+  #contact .footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.8em;
+    text-align: left; }
+    #contact .footer-contacts h2 {
+      display: block;
+      font-weight: lighter;
+      margin-bottom: 2em; }
+    #contact .footer-contacts p {
+      margin-bottom: 0.8em; }
+    #contact .footer-contacts .footer-left {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      #contact .footer-contacts .footer-left button {
+        border: none;
+        border-radius: 4px;
+        margin-top: 20px;
+        cursor: pointer;
+        width: calc(100% - 1em);
+        align-items: center;
+        margin-left: 0.5em;
+        font-size: 1em; }
+    #contact .footer-contacts .footer-right {
+      width: 55%;
+      justify-content: flex-end; }
+    #contact .footer-contacts .table-contact {
+      padding-right: 0.5em;
+      width: 5em; }
 
 /*# sourceMappingURL=main.css.map */
