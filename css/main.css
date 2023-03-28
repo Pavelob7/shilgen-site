@@ -4,14 +4,12 @@
   padding: 0;
   border: 0;
   font-size: 100%;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  box-sizing: border-box; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
-
-body {
-  line-height: 1; }
 
 ol, ul {
   list-style: none; }
@@ -26,7 +24,9 @@ table {
   border-spacing: 0; }
 
 body {
-  -webkit-text-size-adjust: none; }
+  -webkit-text-size-adjust: none;
+  background-color: #6e6ef8;
+  line-height: 1; }
 
 mark {
   background-color: transparent;
@@ -67,6 +67,9 @@ body, input, textarea, select {
   color: #363636;
   font-weight: 300;
   font-size: 13pt; }
+
+main {
+  box-sizing: border-box; }
 
 a {
   -moz-transition: color .2s ease-in-out;
@@ -970,8 +973,7 @@ button,
   button.large,
   .button.large {
     font-size: 1.5em;
-    letter-spacing: -0.025em;
-    margin-right: 1em; }
+    letter-spacing: -0.025em; }
   input[type="button"].alt,
   input[type="submit"].alt,
   input[type="reset"].alt,
@@ -1105,7 +1107,7 @@ ul.actions {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 10000;
   cursor: default;
   height: 3.5em;
@@ -1530,8 +1532,7 @@ input[type=checkbox] {
   padding-left: 1em; }
 
 .button {
-  margin: auto;
-  width: 400px; }
+  margin: auto; }
 
 #contact {
   padding: 0; }
