@@ -50,7 +50,6 @@ table {
 
 body {
   -webkit-text-size-adjust: none;
-  background-color: #6e6ef8;
   line-height: 1;
 
 }
@@ -112,11 +111,11 @@ main {
 
 a {
   @include vendor('transition', 'color .2s ease-in-out');
-  color: #43B3E0;
+  color: #f55e2c;
   text-decoration: underline;
 
   &:hover {
-    color: #43bff0 !important;
+    color: #bb3000 !important;
   }
 
   img {
@@ -1326,4 +1325,5 @@ input[type=checkbox] {
     padding-right: 0.5em;
     width: 5em;
   }
+
 }

@@ -25,7 +25,6 @@ table {
 
 body {
   -webkit-text-size-adjust: none;
-  background-color: #6e6ef8;
   line-height: 1; }
 
 mark {
@@ -76,10 +75,10 @@ a {
   -webkit-transition: color .2s ease-in-out;
   -ms-transition: color .2s ease-in-out;
   transition: color .2s ease-in-out;
-  color: #43B3E0;
+  color: #f55e2c;
   text-decoration: underline; }
   a:hover {
-    color: #43bff0 !important; }
+    color: #bb3000 !important; }
   a img {
     border: 0; }
 
