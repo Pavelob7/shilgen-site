@@ -215,7 +215,6 @@ header {
 }
 
 footer {
-  margin: 3em 0 0 0;
   background-color: #171311;
 
   > p {
@@ -321,7 +320,7 @@ form {
 
     &:focus {
       background: #fafafa;
-      box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.025), inset 0 0 2px 1px #43bff0;
+      box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.025), inset 0 0 2px 1px #f55e2c;
     }
   }
 
@@ -457,7 +456,7 @@ button,
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #43B3E0;
+  background-color: #f55e2c;
   padding: 1em 2.35em 1em 2.35em;
   font-size: 1.1em;
   max-width: 24em;
@@ -469,7 +468,7 @@ button,
   }
 
   &:active {
-    background-color: #3BA8D3;
+    background-color: #f55e2c;
     top: 1px;
   }
 
@@ -583,7 +582,7 @@ ul.actions {
   }
 
   &.featured {
-    color: #EA8A95;
+    color: #f55e2c;
     display: block;
     margin: 0 0 1.5em 0;
     cursor: default;
@@ -643,6 +642,7 @@ ul.actions {
     }
   }
 }
+
 
 /* Nav */
 
@@ -880,8 +880,6 @@ body > article {
   }
 
   footer {
-    margin: 2.5em 0 0 0;
-
     > p {
       font-size: 1.25em;
     }
@@ -1053,10 +1051,10 @@ body > article {
 }
 
 
+/* Block 10 */
 /* Box */
 
 .pic {
-  margin-bottom: 6em;
   padding: 3.5em;
 
   &.alt {
@@ -1065,8 +1063,6 @@ body > article {
     padding: 0;
   }
 }
-
-/* Block 10 */
 
 .card {
   position: relative;
@@ -1098,7 +1094,7 @@ body > article {
   }
 
   &:before {
-    background: blue;
+    background: #f55e2c;
     content: '';
     display: inline-block;
     height: 100%;
@@ -1295,7 +1291,7 @@ input[type=checkbox] {
   }
 
   p {
-    margin-bottom: 0.8em;
+    margin-bottom: 0.2em;
   }
 
   .footer-left {
@@ -1325,5 +1321,4 @@ input[type=checkbox] {
     padding-right: 0.5em;
     width: 5em;
   }
-
 }
