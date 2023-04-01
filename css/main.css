@@ -106,7 +106,7 @@ blockquote {
 
 h1, h2, h3, h4, h5, h6 {
   color: #3e3e3e;
-  margin: 0 0 0.75em 0; }
+  margin: 0 0 2em 0; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
@@ -147,11 +147,9 @@ hr {
 p, ul, ol, dl, table {
   margin-bottom: 2em; }
 
-header {
-  margin: 0 0 3em 0; }
-  header > p {
-    font-size: 1.25em;
-    margin: 0; }
+header > p {
+  font-size: 1.25em;
+  margin: 0; }
 
 footer {
   background-color: #171311; }
@@ -1066,7 +1064,7 @@ ul.actions {
 
 /* Wrappers */
 .wrapper {
-  padding: 8em 0 8em 0;
+  padding: 3em 0 3em 0;
   text-align: center; }
   .wrapper.style1 {
     background-image: none;
@@ -1153,7 +1151,7 @@ body > article {
   margin-bottom: 0; }
 
 #top {
-  padding: 10em 0 10em 0;
+  padding: 3em 0;
   text-align: left; }
   #top .image {
     border-radius: 100%;
@@ -1211,12 +1209,9 @@ body > article {
   input, textarea, select {
     font-size: 11pt; }
 
-  header {
-    margin: 0 0 4em 0; }
-
   /* Wrappers */
   .wrapper {
-    padding: 5em 0 5em 0;
+    padding: 3em 0 3em 0;
     text-align: center; }
     .wrapper.style4 .row-special {
       margin: 2em 0 0 0;
@@ -1224,7 +1219,7 @@ body > article {
 
   /* Articles */
   #top {
-    padding: 8em 0; }
+    padding: 3em 0; }
     #top .image {
       width: 24em;
       height: 24em;
@@ -1250,16 +1245,14 @@ body > article {
 
   h1, h2, h3, h4, h5, h6 {
     font-size: 1.25em;
-    margin: 0 0 0.4em 0; }
+    margin: 0 0 2em 0; }
 
   h1 {
     font-size: 2.25em;
     line-height: 1.25em; }
 
-  header {
-    margin: 0 0 2em 0; }
-    header > p {
-      font-size: 1.25em; }
+  header > p {
+    font-size: 1.25em; }
 
   footer > p {
     font-size: 1.25em; }
@@ -1583,5 +1576,8 @@ input[type=checkbox] {
     transition: background-color 0.2s ease; }
   .social-icons .icon:hover {
     filter: drop-shadow(0 0 3px #f55e2c); }
+
+.horn {
+  width: 5em; }
 
 /*# sourceMappingURL=main.css.map */
