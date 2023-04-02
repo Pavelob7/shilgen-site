@@ -85,15 +85,6 @@ html {
 
 body {
   padding-top: 3.5em;
-
-  // Stops initial animations until page loads.
-  &.is-preload {
-    *, *:before, *:after {
-      @include vendor('animation', 'none !important');
-      @include vendor('transition', 'none !important');
-    }
-  }
-
 }
 
 body, input, textarea, select {
@@ -110,7 +101,6 @@ main {
 }
 
 a {
-  @include vendor('transition', 'color .2s ease-in-out');
   color: #f55e2c;
   text-decoration: underline;
 
@@ -150,7 +140,12 @@ blockquote {
   font-style: italic;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  color: #3e3e3e;
+  margin: 0 0 0.75em 0;
+}
+
+h2, h3, h4, h5, h6 {
   color: #3e3e3e;
   margin: 0 0 2em 0;
 }
@@ -202,7 +197,7 @@ hr {
 }
 
 p, ul, ol, dl, table {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 header {
@@ -303,7 +298,6 @@ form {
   input[type=tel],
   select,
   textarea {
-    @include vendor('transition', ('background .2s ease-in-out', 'box-shadow .2s ease-in-out'));
     -webkit-appearance: none;
     display: block;
     padding: 0.75em;
@@ -442,7 +436,6 @@ input[type="reset"],
 button,
 .button {
   @include vendor('background-image', ('linear-gradient(top, #f55e2c, #850503)'));
-  @include vendor('transition', 'background-color 5s ease-in-out');
   -webkit-appearance: none;
   position: relative;
   display: inline-block;
@@ -668,7 +661,6 @@ ul.actions {
   }
 
   a {
-    @include vendor('transition', 'background-color .2s ease-in-out');
     position: relative;
     display: block;
     color: #fff;
@@ -718,6 +710,7 @@ body > article {
     width: 20em;
     height: 20em;
     margin: 0;
+    margin-top: 4em;
 
     img {
       border-radius: 100%;
@@ -771,14 +764,14 @@ body > article {
   }
 
   a {
-    @include vendor('transition', 'color .2s ease-in-out');
     color: inherit;
-
     &:hover {
       color: #777;
     }
   }
 }
+
+
 
 /* Large */
 
@@ -817,6 +810,7 @@ body > article {
       width: 24em;
       height: 24em;
       margin: 0;
+      margin-top: 3em;
     }
   }
 
@@ -837,6 +831,20 @@ body > article {
     }
   }
 
+  #header-li {
+    text-align: center;
+
+    ul {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+  .button {
+    padding: 1em 3em;
+    font-size: 1.1em;
+    max-width: 28em;
+}
 }
 
 /* Small */
@@ -919,21 +927,6 @@ body > article {
         &:before {
           background-color: transparent !important;
         }
-      }
-    }
-  }
-
-  /* Actions */
-
-  ul.actions {
-    margin: 0;
-
-    li {
-      display: block;
-      margin: 15px 0 0 0;
-
-      &:first-child {
-        margin-top: 0;
       }
     }
   }
@@ -1039,7 +1032,14 @@ body > article {
       }
     }
   }
+  #header-li {
+    text-align: center;
 
+    ul {
+      display: inline-block;
+      text-align: left;
+    }
+  }
 }
 
 
@@ -1313,6 +1313,9 @@ input[type=checkbox] {
     padding-right: 0.5em;
     width: 5em;
   }
+  table {
+    font-size: 1rem;
+  }
 }
 
 
@@ -1333,7 +1336,6 @@ img {
     align-items: center;
     margin-right: 1.3em;
     margin-bottom: 1em;
-    transition: background-color 0.2s ease;
   }
 
   .icon:hover {
