@@ -216,12 +216,17 @@ footer {
 }
 
 #promotion-row {
+  background-color: #171311;
   margin: 0 auto;
-  padding: 25px 0 0 25px;
+  padding: 25px 0 50px 25px;
   width: 1200px;
 
   &.medium {
     width: (1200px * 1);
+  }
+
+  h2 {
+    color: #ffffff;
   }
 
   @include breakpoint('<=xlarge') {
@@ -256,14 +261,30 @@ footer {
     &.medium {
       width: 100%;
     }
+
+    .row {
+      margin-left: 0;
+    }
   }
 
   #promotion-box {
-     width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 90%;
     max-width: 100%;
-   }
-}
 
+    div {
+      flex-basis: 60%;
+    }
+
+    img {
+      float: right;
+      width: 40%;
+    }
+
+  }
+}
 
 
 /* Container */
@@ -816,6 +837,7 @@ body > article {
 
   a {
     color: inherit;
+
     &:hover {
       color: #777;
     }
@@ -829,7 +851,6 @@ body > article {
   }
 
 }
-
 
 
 /* Large */
@@ -903,7 +924,7 @@ body > article {
     padding: 1em 3em;
     font-size: 1.1em;
     max-width: 28em;
-}
+  }
 }
 
 /* Small */
@@ -1026,8 +1047,6 @@ body > article {
       margin-right: auto !important;
     }
   }
-
-
 
 
   /* Wrappers */
@@ -1375,6 +1394,7 @@ input[type=checkbox] {
     padding-right: 0.5em;
     width: 5em;
   }
+
   table {
     font-size: 1rem;
   }
@@ -1388,9 +1408,9 @@ input[type=checkbox] {
   justify-content: center;
   margin-top: 20px;
 
-img {
-  width: 48px;
-}
+  img {
+    width: 48px;
+  }
 
   .icon {
     display: flex;

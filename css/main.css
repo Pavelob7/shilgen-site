@@ -148,11 +148,14 @@ footer {
     font-size: 1.25em; }
 
 #promotion-row {
+  background-color: #171311;
   margin: 0 auto;
-  padding: 25px 0 0 25px;
+  padding: 25px 0 50px 25px;
   width: 1200px; }
   #promotion-row.medium {
     width: 1200px; }
+  #promotion-row h2 {
+    color: #ffffff; }
   @media screen and (max-width: 1680px) {
     #promotion-row {
       width: 1225px; }
@@ -174,10 +177,20 @@ footer {
       width: 100%;
       max-width: calc(100% - 20px); }
       #promotion-row.medium {
-        width: 100%; } }
+        width: 100%; }
+      #promotion-row .row {
+        margin-left: 0; } }
   #promotion-row #promotion-box {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 90%;
     max-width: 100%; }
+    #promotion-row #promotion-box div {
+      flex-basis: 60%; }
+    #promotion-row #promotion-box img {
+      float: right;
+      width: 40%; }
 
 /* Container */
 .container {
