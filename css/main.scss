@@ -215,8 +215,7 @@ footer {
   }
 }
 
-#promotion-row {
-  background-color: #171311;
+.wide-row {
   margin: 0 auto;
   padding: 25px 0 50px 25px;
   width: 1200px;
@@ -267,7 +266,7 @@ footer {
     }
   }
 
-  #promotion-box {
+  .wide-box {
     display: flex;
     align-items: center;
     text-align: left;
@@ -281,8 +280,21 @@ footer {
     img {
       float: right;
       width: 40%;
+      image-rendering: pixelated;
     }
 
+  }
+}
+
+#promotion-row {
+  background-color: #171311;
+}
+
+#steps-row {
+  background-color: #490a29;
+
+  h2 {
+    margin-top: 2em;
   }
 }
 
