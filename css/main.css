@@ -1034,7 +1034,6 @@ ul.actions {
 
 /* Box */
 .box {
-  background: #fff;
   text-align: center;
   padding: 2em; }
   .box.style1 {
@@ -1592,5 +1591,8 @@ input[type=checkbox] {
 
 .horn {
   width: 5em; }
+
+#steps-row {
+  background-color: #9b9b9b; }
 
 /*# sourceMappingURL=main.css.map */
