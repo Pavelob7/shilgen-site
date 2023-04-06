@@ -25,7 +25,8 @@ table {
 
 body {
   -webkit-text-size-adjust: none;
-  line-height: 1; }
+  line-height: 1;
+  background-color: #171311; }
 
 mark {
   background-color: transparent;
@@ -62,7 +63,8 @@ main {
   box-sizing: border-box; }
 
 a {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #fff; }
   a img {
     border: 0; }
 
@@ -139,10 +141,8 @@ header > p {
   font-size: 1.25em;
   margin: 0; }
 
-footer {
-  background-color: #171311; }
-  footer > p {
-    font-size: 1.25em; }
+footer > p {
+  font-size: 1.25em; }
 
 .wide-row {
   margin: 0 auto;
@@ -188,14 +188,6 @@ footer {
       float: right;
       width: 40%;
       image-rendering: pixelated; }
-
-#promotion-row {
-  background-color: #171311; }
-
-#steps-row {
-  background-color: #490a29; }
-  #steps-row h2 {
-    margin-top: 2em; }
 
 /* Container */
 .container {
@@ -1091,35 +1083,25 @@ ul.actions {
 .wrapper {
   padding: 3em 0 3em 0;
   text-align: center; }
-  .wrapper.style1 {
-    background-image: none;
-    background-color: #fff; }
-  .wrapper.style2 {
-    background-color: #fafafa; }
-  .wrapper.style3 {
-    background-color: #f4f4f4; }
-  .wrapper.style4 {
-    background-color: #171311;
-    color: #dcdcdc; }
-    .wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
-      color: #fff; }
-    .wrapper.style4 form input[type=text],
-    .wrapper.style4 form input[type=password],
-    .wrapper.style4 form input[type=tel],
-    .wrapper.style4 form select,
-    .wrapper.style4 form textarea {
-      color: #ffffff;
-      border: none;
-      background: #504a48; }
-      .wrapper.style4 form input[type=text]:focus,
-      .wrapper.style4 form input[type=password]:focus,
-      .wrapper.style4 form input[type=tel]:focus,
-      .wrapper.style4 form select:focus,
-      .wrapper.style4 form textarea:focus {
-        background: #756b68;
-        border: none; }
-    .wrapper.style4 input::placeholder {
-      color: #ffffff; }
+  .wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
+    color: #fff; }
+  .wrapper.style4 form input[type=text],
+  .wrapper.style4 form input[type=password],
+  .wrapper.style4 form input[type=tel],
+  .wrapper.style4 form select,
+  .wrapper.style4 form textarea {
+    color: #ffffff;
+    border: none;
+    background: #504a48; }
+    .wrapper.style4 form input[type=text]:focus,
+    .wrapper.style4 form input[type=password]:focus,
+    .wrapper.style4 form input[type=tel]:focus,
+    .wrapper.style4 form select:focus,
+    .wrapper.style4 form textarea:focus {
+      background: #756b68;
+      border: none; }
+  .wrapper.style4 input::placeholder {
+    color: #ffffff; }
 
 /* Nav */
 #nav {
