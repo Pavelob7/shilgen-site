@@ -1407,4 +1407,16 @@ input[type=checkbox] {
 
 #steps-row {
   background-color: #9b9b9b;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 20%;
+  }
 }
+
+
