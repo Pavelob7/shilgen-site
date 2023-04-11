@@ -475,18 +475,35 @@
                 <div class="col-12">
                     <form method="post" action="#">
                         <div class="row">
+
                             <div class="col-6 col-12-small">
-                                <input type="text" name="name" id="name" placeholder="Имя" required>
+                                <div class="form__group field">
+                                    <input type="name" name="name" id="name" class="form__field" placeholder="Ваше имя"
+                                           required="">
+                                    <label for="name" class="form__label">Ваше имя</label>
+                                </div>
                             </div>
+
+
                             <div class="col-6 col-12-small">
-                                <input minlength="10" type="tel" name="tel" id="tel" placeholder="Номер телефона"
-                                       required>
+                                <div class="form__group field">
+                                    <input minlength="10" type="tel" class="form__field" name="tel" id="tel"
+                                           placeholder="Номер телефона"
+                                           required>
+                                    <label for="tel" class="form__label">Ваш телефон</label>
+                                </div>
                             </div>
+
                             <div class="col-12">
-                                <input type="text" name="subject" id="subject" placeholder="Ваш telegram" required>
+                                <div class="form__group field">
+                                    <input minlength="10" type="tel" class="form__field" name="tel" id="telegram"
+                                           placeholder="Ваш телеграм"
+                                           required>
+                                    <label for="telegram" class="form__label">Ваш телеграм</label>
+                                </div>
                             </div>
                             <div class="col-12" id="footer-checkbox">
-                                <label for="link">Пожалуйста, выберите площадки, где размещаетесь:</label>
+                               <p> <label for="link">Пожалуйста, выберите площадки, где размещаетесь:</label></p>
                                 <div class="checkbox">
                                     <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1"
                                            value="indigo">
@@ -506,18 +523,38 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <label for="link">Введите цифры или URL:</label>
-                                <input type="text" id="link" name="link"
-                                       placeholder="Артикулы товара для анализа (можно ссылками)? Ссылки на действующие магазины"
-                                       pattern="\d+|https?://[^\s/$.?#].[^\s]*" required>
+                                <div class="form__group field">
+                                    <input type="text" class="form__field" id="link" name="link"
+                                           placeholder="Артикулы товара для анализа (можно ссылками)? Ссылки на действующие магазины"
+                                           pattern="\d+|https?://[^\s/$.?#].[^\s]*" required>
+                                    <label for="link" class="form__label">Введите артикул товара, можно цифры или
+                                        URL:</label>
+                                </div>
+
                             </div>
                             <div class="col-12">
-                                <label for="message" class="left-label">Что нужно в первую очередь? <br> - Анализ
+                                <p class="left-label">
+                                    Что нужно в первую очередь? <br> - Анализ
+                                    ситуации?
+                                    <br> - Проработать сео?
+                                    <br> - План работ по продвижению?
+                                    <br> - Напишу сам
+                                </p>
+                                <div class="form__group field">
+                                    <textarea minlength="10" class="form__field" name="message" id="message"
+                                              placeholder="Ответы сюда:" required></textarea>
+                                    <label for="message" class="form__label">Ответы сюда:</label>
+                                </div>
+
+
+                                <!-- <label for="message" class="left-label">Что нужно в первую очередь? <br> - Анализ
                                     ситуации?
                                     <br> - Проработать сео?
                                     <br> - План работ по продвижению?
                                     <br> - Напишу сам</label>
-                                <textarea name="message" id="message" placeholder="Ответы сюда:"></textarea>
+                                <textarea name="message" id="message" placeholder="Ответы сюда:"></textarea> -->
+
+
                             </div>
                             <div class="col-12">
                                 <a class="button large scrolly">Отправить</a>
@@ -538,15 +575,6 @@
                     <p>ОГРНИП 321332800061879</p>
                     <a href="#brief" class="button large scrolly">Записаться на консультацию</a>
                 </div>
-
-
-                <!--
-                Вк
-                Тг
-                Вб
-                Вотс апп
-                ВайБер
-                -->
 
 
                 <div class="footer-right">

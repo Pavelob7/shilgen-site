@@ -1,10 +1,11 @@
-@import 'vars';
 @import 'functions';
 @import 'mixins';
 @import 'vendor';
 @import 'breakpoints';
 @import 'html-grid';
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+$main-color: #f55e2c;
 
 
 // Breakpoints.
@@ -23,6 +24,7 @@
   font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
+  color: #fff;
 }
 
 article, aside, details, figcaption, figure,
@@ -90,7 +92,6 @@ body {
 body, input, textarea, select {
   font-family: 'Mulish', sans-serif;
   line-height: 1.85em;
-  color: #fff;
   font-weight: 300;
   font-size: 13pt;
 
@@ -111,7 +112,6 @@ a {
 
 b, strong {
   font-weight: 600;
-  color: #fff;
 }
 
 i, em {
@@ -137,12 +137,10 @@ blockquote {
 }
 
 h1 {
-  color: #fff;
   margin: 0 0 0.75em 0;
 }
 
 h2, h3, h4, h5, h6 {
-  color: #fff;
   margin: 0 0 2em 0;
 }
 
@@ -216,10 +214,6 @@ footer {
 
   &.medium {
     width: (1200px * 1);
-  }
-
-  h2 {
-    color: #ffffff;
   }
 
   @include breakpoint('<=xlarge') {
@@ -348,71 +342,6 @@ footer {
   }
 }
 
-/* Form */
-
-form {
-  label {
-    color: #9b9b9b;
-    font-weight: 700;
-    display: block;
-    margin: 0 0 0.5em 0;
-  }
-
-  input[type=text],
-  input[type=email],
-  input[type=password],
-  input[type=tel],
-  select,
-  textarea {
-    -webkit-appearance: none;
-    display: block;
-    padding: 0.75em;
-    font-size: 1em;
-    border-radius: 8px;
-    border: solid 1px #ddd;
-    background: #fff;
-    color: #bbb;
-    box-shadow: inset 0 2px 3px 1px rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.025);
-    width: 100%;
-    resize: none;
-
-    &:focus {
-      background: #fafafa;
-      box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.025), inset 0 0 2px 1px #f55e2c;
-    }
-  }
-
-  textarea {
-    height: 15em;
-  }
-
-  .actions {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  ::-webkit-input-placeholder {
-    color: #989898 !important;
-  }
-
-  :-moz-placeholder {
-    color: #989898 !important;
-  }
-
-  ::-moz-placeholder {
-    color: #989898 !important;
-  }
-
-  :-ms-input-placeholder {
-    color: #989898 !important;
-  }
-
-  ::-moz-focus-inner {
-    border: 0;
-  }
-}
-
 /* Tables */
 
 table {
@@ -442,7 +371,6 @@ table {
 
     thead {
       background: #4f4f4f;
-      color: #fff;
     }
   }
 }
@@ -501,7 +429,7 @@ input[type="submit"],
 input[type="reset"],
 button,
 .button {
-  background-color: #f55e2c;
+  background-color: $main-color;
   -webkit-appearance: none;
   position: relative;
   display: inline-block;
@@ -512,7 +440,6 @@ button,
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #f55e2c;
   padding: 1em 2.35em 1em 2.35em;
   font-size: 1.1em;
   max-width: 24em;
@@ -523,7 +450,7 @@ button,
   }
 
   &:active {
-    background-color: #f55e2c;
+    background-color: $main-color;
     top: 1px;
   }
 
@@ -533,13 +460,8 @@ button,
   }
 
   &.alt {
-    background-color: #444;
     box-shadow: inset 0 0 0 1px #242424, inset 0 2px 1px 0 rgba(255, 255, 255, 0.2);
 
-    &:hover {
-      background-color: #4f4f4f;
-      color: #fff !important;
-    }
 
     &:active {
       background-color: #3f3f3f;
@@ -636,7 +558,7 @@ ul.actions {
   }
 
   &.featured {
-    color: #f55e2c;
+    color: $main-color;
     display: block;
     margin: 0 0 1.5em 0;
     cursor: default;
@@ -652,33 +574,6 @@ ul.actions {
 .wrapper {
   padding: 3em 0 3em 0;
   text-align: center;
-
-  &.style4 {
-    h1, h2, h3, h4, h5, h6 {
-      color: #fff;
-    }
-
-    form {
-      input[type=text],
-      input[type=password],
-      input[type=tel],
-      select,
-      textarea {
-        color: #ffffff;
-        border: none;
-        background: #504a48;
-
-        &:focus {
-          background: #756b68;
-          border: none;
-        }
-      }
-    }
-
-    input::placeholder {
-      color: #ffffff;
-    }
-  }
 }
 
 
@@ -720,8 +615,7 @@ ul.actions {
     padding: 0 1.25em;
 
     &:hover {
-      color: #fff !important;
-      background: #f55e2c;
+      background: $main-color;
     }
 
     &.active {
@@ -1142,7 +1036,7 @@ body > article {
   }
 
   &:before {
-    background: #f55e2c;
+    background: $main-color;
     content: '';
     display: inline-block;
     height: 100%;
@@ -1249,7 +1143,6 @@ input[type=checkbox] {
   opacity: 0;
   margin: auto;
   justify-content: start;
-  color: #ffffff !important;
 }
 
 .custom-checkbox + label {
@@ -1288,12 +1181,12 @@ input[type=checkbox] {
 }
 
 .custom-checkbox:focus:not(:checked) + label::before {
-  border-color: #f55e2c;
+  border-color: $main-color;
 }
 
 .custom-checkbox:checked + label::before {
-  border-color: #f55e2c;
-  background-color: #f55e2c;
+  border-color: $main-color;
+  background-color: $main-color;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
@@ -1305,7 +1198,6 @@ input[type=checkbox] {
   width: 33%;
   margin: auto;
   float: left;
-  color: #ffffff !important;
 }
 
 
@@ -1396,7 +1288,7 @@ input[type=checkbox] {
   }
 
   .icon:hover {
-    filter: drop-shadow(0 0 3px #f55e2c);
+    filter: drop-shadow(0 0 3px $main-color);
   }
 }
 
@@ -1428,5 +1320,80 @@ input[type=checkbox] {
     width: 20%;
   }
 }
+
+/* Forms */
+
+  .form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+
+
+  .form__field {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+
+  .form__field::placeholder {
+    color: transparent;
+  }
+
+  .form__field:placeholder-shown ~ .form__label {
+    cursor: text;
+    top: 20px;
+  }
+
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-bottom: 2px solid $main-color;
+  }
+
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    color: $main-color;
+    font-weight: 700;
+  }
+
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+    #link {
+
+      .form__field:placeholder-shown ~ .form__label {
+        cursor: text;
+        top: 50px;
+      }
+
+    }
+
+}
+
+textarea {
+  resize: none;
+  min-height: 300px;
+}
+
 
 

@@ -5,7 +5,8 @@
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #fff; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -55,7 +56,6 @@ body {
 body, input, textarea, select {
   font-family: 'Mulish', sans-serif;
   line-height: 1.85em;
-  color: #fff;
   font-weight: 300;
   font-size: 13pt; }
 
@@ -69,8 +69,7 @@ a {
     border: 0; }
 
 b, strong {
-  font-weight: 600;
-  color: #fff; }
+  font-weight: 600; }
 
 i, em {
   font-style: italic; }
@@ -91,11 +90,9 @@ blockquote {
   font-style: italic; }
 
 h1 {
-  color: #fff;
   margin: 0 0 0.75em 0; }
 
 h2, h3, h4, h5, h6 {
-  color: #fff;
   margin: 0 0 2em 0; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -150,8 +147,6 @@ footer > p {
   width: 1200px; }
   .wide-row.medium {
     width: 1200px; }
-  .wide-row h2 {
-    color: #ffffff; }
   @media screen and (max-width: 1680px) {
     .wide-row {
       width: 1225px; }
@@ -849,52 +844,6 @@ footer > p {
           .row.gtr-200.gtr-uniform > * {
             padding-top: 30px; } }
 
-/* Form */
-form label {
-  color: #9b9b9b;
-  font-weight: 700;
-  display: block;
-  margin: 0 0 0.5em 0; }
-form input[type=text],
-form input[type=email],
-form input[type=password],
-form input[type=tel],
-form select,
-form textarea {
-  -webkit-appearance: none;
-  display: block;
-  padding: 0.75em;
-  font-size: 1em;
-  border-radius: 8px;
-  border: solid 1px #ddd;
-  background: #fff;
-  color: #bbb;
-  box-shadow: inset 0 2px 3px 1px rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.025);
-  width: 100%;
-  resize: none; }
-  form input[type=text]:focus,
-  form input[type=email]:focus,
-  form input[type=password]:focus,
-  form input[type=tel]:focus,
-  form select:focus,
-  form textarea:focus {
-    background: #fafafa;
-    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.025), inset 0 0 2px 1px #f55e2c; }
-form textarea {
-  height: 15em; }
-form .actions:last-child {
-  margin-bottom: 0; }
-form ::-webkit-input-placeholder {
-  color: #989898 !important; }
-form :-moz-placeholder {
-  color: #989898 !important; }
-form ::-moz-placeholder {
-  color: #989898 !important; }
-form :-ms-input-placeholder {
-  color: #989898 !important; }
-form ::-moz-focus-inner {
-  border: 0; }
-
 /* Tables */
 table {
   width: 100%; }
@@ -912,8 +861,7 @@ table {
       font-weight: 600;
       margin: 0 0 1em 0; }
     table.default thead {
-      background: #4f4f4f;
-      color: #fff; }
+      background: #4f4f4f; }
 
 /* Section/Article */
 section > :last-child,
@@ -963,7 +911,6 @@ button,
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #f55e2c;
   padding: 1em 2.35em 1em 2.35em;
   font-size: 1.1em;
   max-width: 24em; }
@@ -992,15 +939,7 @@ button,
   input[type="reset"].alt,
   button.alt,
   .button.alt {
-    background-color: #444;
     box-shadow: inset 0 0 0 1px #242424, inset 0 2px 1px 0 rgba(255, 255, 255, 0.2); }
-    input[type="button"].alt:hover,
-    input[type="submit"].alt:hover,
-    input[type="reset"].alt:hover,
-    button.alt:hover,
-    .button.alt:hover {
-      background-color: #4f4f4f;
-      color: #fff !important; }
     input[type="button"].alt:active,
     input[type="submit"].alt:active,
     input[type="reset"].alt:active,
@@ -1061,9 +1000,7 @@ ul.actions {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
-    text-transform: none !important;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 400; }
+    text-transform: none !important; }
   .icon:before {
     font-size: 1.25em; }
   .icon > .label {
@@ -1082,25 +1019,6 @@ ul.actions {
 .wrapper {
   padding: 3em 0 3em 0;
   text-align: center; }
-  .wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
-    color: #fff; }
-  .wrapper.style4 form input[type=text],
-  .wrapper.style4 form input[type=password],
-  .wrapper.style4 form input[type=tel],
-  .wrapper.style4 form select,
-  .wrapper.style4 form textarea {
-    color: #ffffff;
-    border: none;
-    background: #504a48; }
-    .wrapper.style4 form input[type=text]:focus,
-    .wrapper.style4 form input[type=password]:focus,
-    .wrapper.style4 form input[type=tel]:focus,
-    .wrapper.style4 form select:focus,
-    .wrapper.style4 form textarea:focus {
-      background: #756b68;
-      border: none; }
-  .wrapper.style4 input::placeholder {
-    color: #ffffff; }
 
 /* Nav */
 #nav {
@@ -1133,7 +1051,6 @@ ul.actions {
     line-height: 2.5em;
     padding: 0 1.25em; }
     #nav a:hover {
-      color: #fff !important;
       background: #f55e2c; }
     #nav a.active {
       background: #484848; }
@@ -1475,8 +1392,7 @@ input[type=checkbox] {
   z-index: -1;
   opacity: 0;
   margin: auto;
-  justify-content: start;
-  color: #ffffff !important; }
+  justify-content: start; }
 
 .custom-checkbox + label {
   display: inline-flex;
@@ -1522,8 +1438,7 @@ input[type=checkbox] {
 .checkbox {
   width: 33%;
   margin: auto;
-  float: left;
-  color: #ffffff !important; }
+  float: left; }
 
 .left-label {
   margin-top: 1em;
@@ -1607,5 +1522,54 @@ input[type=checkbox] {
     max-width: 200px; }
   #steps-row img {
     width: 20%; }
+
+/* Forms */
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  /* reset input */ }
+  .form__group .form__field {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s; }
+  .form__group .form__field::placeholder {
+    color: transparent; }
+  .form__group .form__field:placeholder-shown ~ .form__label {
+    cursor: text;
+    top: 20px; }
+  .form__group .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none; }
+  .form__group .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-bottom: 2px solid #f55e2c; }
+  .form__group .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    color: #f55e2c;
+    font-weight: 700; }
+  .form__group .form__field:required, .form__group .form__field:invalid {
+    box-shadow: none; }
+  .form__group #link .form__field:placeholder-shown ~ .form__label {
+    cursor: text;
+    top: 50px; }
+
+textarea {
+  resize: none;
+  min-height: 300px; }
 
 /*# sourceMappingURL=main.css.map */
