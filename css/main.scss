@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 $main-color: #f55e2c;
+$body-color: #171311;
+
 
 
 // Breakpoints.
@@ -53,7 +55,7 @@ table {
 body {
   -webkit-text-size-adjust: none;
   line-height: 1;
-  background-color: #171311;
+  background-color: $body-color;
 }
 
 mark {
@@ -580,7 +582,7 @@ ul.actions {
 /* Nav */
 
 #nav {
-  background-color: #171311;
+  background-color: $body-color;
   text-align: center;
   position: fixed;
   left: 0;
@@ -1195,8 +1197,7 @@ input[type=checkbox] {
 }
 
 .checkbox {
-  width: 33%;
-  margin: auto;
+  width: 100%;
   float: left;
 }
 
@@ -1393,6 +1394,7 @@ input[type=checkbox] {
 textarea {
   resize: none;
   min-height: 300px;
+  margin-bottom: 20px;
 }
 
 

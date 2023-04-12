@@ -1436,8 +1436,7 @@ input[type=checkbox] {
   background-color: #e9ecef; }
 
 .checkbox {
-  width: 33%;
-  margin: auto;
+  width: 100%;
   float: left; }
 
 .left-label {
@@ -1570,6 +1569,7 @@ input[type=checkbox] {
 
 textarea {
   resize: none;
-  min-height: 300px; }
+  min-height: 300px;
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */

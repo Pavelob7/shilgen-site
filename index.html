@@ -475,7 +475,6 @@
                 <div class="col-12">
                     <form method="post" action="#">
                         <div class="row">
-
                             <div class="col-6 col-12-small">
                                 <div class="form__group field">
                                     <input type="name" name="name" id="name" class="form__field" placeholder="Ваше имя"
@@ -483,8 +482,6 @@
                                     <label for="name" class="form__label">Ваше имя</label>
                                 </div>
                             </div>
-
-
                             <div class="col-6 col-12-small">
                                 <div class="form__group field">
                                     <input minlength="10" type="tel" class="form__field" name="tel" id="tel"
@@ -493,7 +490,6 @@
                                     <label for="tel" class="form__label">Ваш телефон</label>
                                 </div>
                             </div>
-
                             <div class="col-12">
                                 <div class="form__group field">
                                     <input minlength="10" type="tel" class="form__field" name="tel" id="telegram"
@@ -502,24 +498,24 @@
                                     <label for="telegram" class="form__label">Ваш телеграм</label>
                                 </div>
                             </div>
-                            <div class="col-12" id="footer-checkbox">
-                               <p> <label for="link">Пожалуйста, выберите площадки, где размещаетесь:</label></p>
+                            <div class="col-12 left-label" id="footer-checkbox">
+                                <p><label for="link">Пожалуйста, выберите площадки, где размещаетесь:</label></p>
                                 <div class="checkbox">
-                                    <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1"
-                                           value="indigo">
-                                    <label for="color-1">Яндекс.маркет</label>
-                                </div>
+                                    <p><input class="custom-checkbox" type="checkbox" id="market" name="market"
+                                              value="market">
+                                        <label for="market">Яндекс.маркет</label>
+                                    </p>
 
-                                <div class="checkbox">
-                                    <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2"
-                                           value="red">
-                                    <label for="color-2">Wildberries</label>
-                                </div>
+                                    <p><input class="custom-checkbox" type="checkbox" id="wildberries"
+                                              name="wildberries"
+                                              value="wildberries">
+                                        <label for="wildberries">Wildberries</label>
+                                    </p>
 
-                                <div class="checkbox">
-                                    <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3"
-                                           value="brown">
-                                    <label for="color-3">Ozon</label>
+                                    <p><input class="custom-checkbox" type="checkbox" id="ozon" name="ozon"
+                                              value="ozon">
+                                        <label for="ozon">Ozon</label>
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -532,37 +528,40 @@
                                 </div>
 
                             </div>
-                            <div class="col-12">
-                                <p class="left-label">
-                                    Что нужно в первую очередь? <br> - Анализ
-                                    ситуации?
-                                    <br> - Проработать сео?
-                                    <br> - План работ по продвижению?
-                                    <br> - Напишу сам
-                                </p>
-                                <div class="form__group field">
+                            <div class="col-12 left-label" id="footer-checkbox">
+                                <p><label for="link">Что нужно в первую очередь?</label></p>
+                                <div class="checkbox">
+                                    <p><input class="custom-checkbox" type="checkbox" id="analysis" name="analysis"
+                                              value="analysis">
+                                        <label for="analysis">Анализ ситуации</label>
+                                    </p>
+
+                                    <p><input class="custom-checkbox" type="checkbox" id="seo"
+                                              name="seo"
+                                              value="seo">
+                                        <label for="seo">Проработать SEO</label>
+                                    </p>
+
+                                    <p><input class="custom-checkbox" type="checkbox" id="plan" name="plan"
+                                              value="plan">
+                                        <label for="plan">План работ по продвижению</label>
+                                    </p>
+                                    <p>- Напишу сам</p>
+                                    <div class="form__group field">
                                     <textarea minlength="10" class="form__field" name="message" id="message"
                                               placeholder="Ответы сюда:" required></textarea>
-                                    <label for="message" class="form__label">Ответы сюда:</label>
+                                        <label for="message" class="form__label">Ответы сюда:</label>
+                                    </div>
                                 </div>
-
-
-                                <!-- <label for="message" class="left-label">Что нужно в первую очередь? <br> - Анализ
-                                    ситуации?
-                                    <br> - Проработать сео?
-                                    <br> - План работ по продвижению?
-                                    <br> - Напишу сам</label>
-                                <textarea name="message" id="message" placeholder="Ответы сюда:"></textarea> -->
-
-
-                            </div>
-                            <div class="col-12">
-                                <a class="button large scrolly">Отправить</a>
                             </div>
                         </div>
-                    </form>
+                        <div class="col-12">
+                            <a class="button large scrolly">Отправить</a>
+                        </div>
                 </div>
+                </form>
             </div>
+        </div>
         </div>
     </section>
     <section class="contact wrapper style4" id="contact">
