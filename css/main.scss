@@ -9,7 +9,6 @@ $main-color: #f55e2c;
 $body-color: #171311;
 
 
-
 // Breakpoints.
 
 @include breakpoints((
@@ -23,7 +22,6 @@ $body-color: #171311;
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline;
   box-sizing: border-box;
   color: #fff;
@@ -45,11 +43,6 @@ blockquote, q {
   &:after {
     content: '';
   }
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 body {
@@ -95,8 +88,6 @@ body, input, textarea, select {
   font-family: 'Mulish', sans-serif;
   line-height: 1.85em;
   font-weight: 300;
-  font-size: 13pt;
-
 }
 
 main {
@@ -110,32 +101,6 @@ a {
   img {
     border: 0;
   }
-}
-
-b, strong {
-  font-weight: 600;
-}
-
-i, em {
-  font-style: italic;
-}
-
-sub {
-  position: relative;
-  top: 0.5em;
-  font-size: 0.8em;
-}
-
-sup {
-  position: relative;
-  top: -0.5em;
-  font-size: 0.8em;
-}
-
-blockquote {
-  border-left: solid 0.75em #eee;
-  padding: 1em 0 1em 1.5em;
-  font-style: italic;
 }
 
 h1 {
@@ -156,7 +121,6 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.25em;
   letter-spacing: -0.025em;
   font-weight: 300;
 
@@ -166,12 +130,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
   letter-spacing: -0.015em;
 }
 
 h3 {
-  font-size: 1.5em;
   letter-spacing: -0.015em;
 }
 
@@ -192,22 +154,16 @@ hr {
   margin: 3em 0;
 }
 
-p, ul, ol, dl, table {
+p, ul, ol, dl {
   margin-bottom: 1em;
 }
 
 header {
   > p {
-    font-size: 1.25em;
     margin: 0;
   }
 }
 
-footer {
-  > p {
-    font-size: 1.25em;
-  }
-}
 
 .wide-row {
   margin: 0 auto;
@@ -344,39 +300,6 @@ footer {
   }
 }
 
-/* Tables */
-
-table {
-  width: 100%;
-
-  &.default {
-    width: 100%;
-
-    tr {
-      border-top: solid 1px #eee;
-
-      &:first-child {
-        border-top: 0;
-      }
-    }
-
-    td {
-      padding: 0.5em 1em 0.5em 1em;
-    }
-
-    th {
-      text-align: left;
-      padding: 0.5em 1em 0.5em 1em;
-      font-weight: 600;
-      margin: 0 0 1em 0;
-    }
-
-    thead {
-      background: #4f4f4f;
-    }
-  }
-}
-
 /* Section/Article */
 
 section > :last-child,
@@ -443,7 +366,6 @@ button,
   border-radius: 8px;
   overflow: hidden;
   padding: 1em 2.35em 1em 2.35em;
-  font-size: 1.1em;
   max-width: 24em;
 
 
@@ -457,7 +379,6 @@ button,
   }
 
   &.large {
-    font-size: 1.5em;
     letter-spacing: -0.025em;
   }
 
@@ -545,9 +466,6 @@ ul.actions {
   @include icon;
   text-decoration: none;
 
-  &:before {
-    font-size: 1.25em;
-  }
 
   > .label {
     display: none;
@@ -565,9 +483,6 @@ ul.actions {
     margin: 0 0 1.5em 0;
     cursor: default;
 
-    &:before {
-      font-size: 6em;
-    }
   }
 }
 
@@ -665,7 +580,6 @@ body > article {
   }
 
   p {
-    font-size: 1.5em;
     line-height: 1.75em;
 
     a {
@@ -674,17 +588,11 @@ body > article {
   }
 }
 
-.contact {
-  footer {
-    font-size: 0.9em;
-  }
-}
 
 /* Copyright */
 
 #copyright {
   color: #666;
-  font-size: 1em;
   line-height: 3em;
   list-style: none;
   padding-top: 1em;
@@ -727,16 +635,6 @@ body > article {
 /* Large */
 
 @include breakpoint('<=large') {
-
-  /* Basic */
-
-  body {
-    font-size: 11pt;
-  }
-
-  input, textarea, select {
-    font-size: 11pt;
-  }
 
   /* Wrappers */
 
@@ -793,7 +691,6 @@ body > article {
 
   .button {
     padding: 1em 3em;
-    font-size: 1.1em;
     max-width: 28em;
   }
 }
@@ -810,29 +707,24 @@ body > article {
 
   body, input, textarea, select {
     line-height: 1.75em;
-    font-size: 10pt;
     letter-spacing: 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-size: 1.25em;
     margin: 0 0 2em 0;
   }
 
   h1 {
-    font-size: 2.25em;
     line-height: 1.25em;
   }
 
   header {
     > p {
-      font-size: 1.25em;
     }
   }
 
   footer {
     > p {
-      font-size: 1.25em;
     }
   }
 
@@ -854,12 +746,10 @@ body > article {
   button,
   .button {
     text-align: center;
-    font-size: 1.2em;
     width: 100%;
     padding: 1em 0 1em 0;
 
     &.large {
-      font-size: 1.2em;
       letter-spacing: 0;
     }
   }
@@ -954,10 +844,6 @@ body > article {
       height: 15em;
       margin-bottom: 0;
     }
-
-    p {
-      font-size: 1em;
-    }
   }
 
   .contact {
@@ -969,7 +855,6 @@ body > article {
   /* Copyright */
 
   #copyright {
-    font-size: 1em;
     margin: 0;
 
     li {
@@ -992,114 +877,17 @@ body > article {
       text-align: left;
     }
   }
-}
 
+  #promotion-box {
+    width: 100%;
 
-/* Block 10 */
-/* Box */
+  .box {
+    width: 100%;
+  }
 
-.pic {
-  padding: 3.5em;
-
-  &.alt {
-    background: none;
-    border: none;
-    padding: 0;
   }
 }
 
-.card {
-  position: relative;
-  height: 20em;
-
-  &:after {
-    clear: both;
-    content: '';
-    display: block;
-  }
-
-  h3, h4, h5, h6 {
-    text-align: inherit;
-  }
-
-  .image {
-    display: inline-block;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    width: 50%;
-
-    img {
-      display: block;
-      min-height: 100%;
-      min-width: 100%;
-      position: absolute;
-    }
-  }
-
-  &:before {
-    background: $main-color;
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
-
-  .pic-card {
-    display: inline-block;
-    padding: 3.5em;
-    vertical-align: middle;
-    width: 48%;
-
-    h3 {
-      margin-bottom: 0.5em;
-    }
-
-    :last-child {
-      margin: 0;
-    }
-  }
-
-  &.left {
-    text-align: left;
-
-    .image {
-      float: left;
-
-      img {
-        right: 0;
-        top: 0;
-      }
-    }
-
-    .pic-card {
-      padding-right: 0;
-    }
-  }
-
-  &.right {
-    text-align: right;
-
-    .image {
-      float: right;
-
-      img {
-        left: 0;
-        top: 0;
-      }
-    }
-
-    .pic-card {
-      padding-left: 0;
-    }
-  }
-
-  &.long {
-    .pic-card {
-      padding-top: 0;
-    }
-  }
-}
 
 /* header li */
 
@@ -1248,7 +1036,6 @@ input[type=checkbox] {
       width: calc(100% - 1em);
       align-items: center;
       margin-left: 0.5em;
-      font-size: 1em;
       text-align: center;
     }
   }
@@ -1256,15 +1043,29 @@ input[type=checkbox] {
   .footer-right {
     width: 55%;
     justify-content: flex-end;
-  }
 
-  .table-contact {
-    padding-right: 0.5em;
-    width: 5em;
-  }
 
-  table {
-    font-size: 1rem;
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li:before {
+      content: "Телеграм";
+      display: inline-block;
+      width: 5em;
+      margin-right: 10px;
+    }
+
+    li:nth-child(2):before {
+      content: "Телефон";
+    }
+
+    li:nth-child(3):before {
+      content: "E-mail";
+    }
+
+
   }
 }
 
@@ -1301,6 +1102,9 @@ input[type=checkbox] {
 #steps-row {
   background-color: #9b9b9b;
 
+
+  /* steps */
+
   .my-flex-cont {
     display: flex;
     flex-flow: row wrap;
@@ -1317,17 +1121,21 @@ input[type=checkbox] {
   }
 
 
+  p {
+    width: 100%;
+  }
+
   img {
-    width: 20%;
+    width: 100%;
   }
 }
 
 /* Forms */
 
-  .form__group {
-    position: relative;
-    padding: 20px 0 0;
-    width: 100%;
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
 
 
   .form__field {
@@ -1354,7 +1162,6 @@ input[type=checkbox] {
     top: 0;
     display: block;
     transition: 0.2s;
-    font-size: 17px;
     color: #9b9b9b;
     pointer-events: none;
   }
@@ -1380,14 +1187,14 @@ input[type=checkbox] {
     box-shadow: none;
   }
 
-    #link {
+  #link {
 
-      .form__field:placeholder-shown ~ .form__label {
-        cursor: text;
-        top: 50px;
-      }
-
+    .form__field:placeholder-shown ~ .form__label {
+      cursor: text;
+      top: 50px;
     }
+
+  }
 
 }
 
