@@ -1198,11 +1198,45 @@ input[type=checkbox] {
 
 }
 
-textarea {
-  resize: none;
-  min-height: 300px;
-  margin-bottom: 20px;
+.input-group {
+  position: relative;
+  width: 100%;
+
+  textarea {
+    resize: none;
+    min-height: 300px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+
+  .text {
+  border: 3px solid #9b9b9b;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
+.user-label {
+  position: absolute;
+  left: 15px;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 350ms;
+  color: #9b9b9b;
+}
 
+.text:focus,
+input:valid {
+  outline: none;
+  border: 2px solid $main-color;
+}
 
+.text:focus~label,
+input:valid~label {
+  transform: translateY(1000%) scale(1);
+  padding: 0 .2em;
+  color: $main-color;
+  background-color: $body-color;
+}
+}

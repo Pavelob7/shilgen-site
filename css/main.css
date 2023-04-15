@@ -1430,9 +1430,35 @@ input[type=checkbox] {
     cursor: text;
     top: 50px; }
 
-textarea {
-  resize: none;
-  min-height: 300px;
-  margin-bottom: 20px; }
+.input-group {
+  position: relative;
+  width: 100%; }
+  .input-group textarea {
+    resize: none;
+    min-height: 300px;
+    margin-bottom: 20px;
+    width: 100%; }
+  .input-group .text {
+    border: 3px solid #9b9b9b;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem; }
+  .input-group .user-label {
+    position: absolute;
+    left: 15px;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 350ms;
+    color: #9b9b9b; }
+  .input-group .text:focus,
+  .input-group input:valid {
+    outline: none;
+    border: 2px solid #f55e2c; }
+  .input-group .text:focus ~ label,
+  .input-group input:valid ~ label {
+    transform: translateY(1000%) scale(1);
+    padding: 0 .2em;
+    color: #f55e2c;
+    background-color: #171311; }
 
 /*# sourceMappingURL=main.css.map */
