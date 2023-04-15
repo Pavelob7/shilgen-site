@@ -7,6 +7,7 @@
 
 $main-color: #f55e2c;
 $body-color: #171311;
+$body-sec-color: #100e0c;
 
 
 // Breakpoints.
@@ -918,6 +919,14 @@ body > article {
 
 #header-h1 {
   line-height: 1em;
+}
+
+header {
+  background-color: $body-sec-color;
+}
+
+footer {
+  background-color: $body-sec-color;
 }
 
 input[type=checkbox] {

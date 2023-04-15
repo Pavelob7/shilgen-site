@@ -1236,6 +1236,12 @@ body > article {
 #header-h1 {
   line-height: 1em; }
 
+header {
+  background-color: #100e0c; }
+
+footer {
+  background-color: #100e0c; }
+
 input[type=checkbox] {
   -moz-appearance: checkbox;
   -webkit-appearance: checkbox;
