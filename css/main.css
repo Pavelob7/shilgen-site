@@ -22,7 +22,8 @@ blockquote, q {
 body {
   color: #fff;
   line-height: 1;
-  background-color: #171311; }
+  background-color: #171311;
+  font-size: clamp(1rem, calc(12px + 1vw), 20px); }
 
 mark {
   background-color: transparent;
@@ -141,7 +142,6 @@ header > p {
     display: flex;
     align-items: center;
     text-align: left;
-    width: 90%;
     max-width: 100%; }
     .wide-row .wide-box div {
       flex-basis: 60%; }
@@ -838,8 +838,7 @@ header > p {
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
-button,
-.button {
+button {
   background-color: #f55e2c;
   -webkit-appearance: none;
   position: relative;
@@ -852,37 +851,28 @@ button,
   border-radius: 8px;
   overflow: hidden;
   padding: 0.8em 2em;
-  max-width: 24em; }
+  max-width: 24em;
+  color: #fff; }
   input[type="button"]:hover,
   input[type="submit"]:hover,
   input[type="reset"]:hover,
-  button:hover,
-  .button:hover {
+  button:hover {
     background-color: #f56b41; }
   input[type="button"]:active,
   input[type="submit"]:active,
   input[type="reset"]:active,
-  button:active,
-  .button:active {
+  button:active {
     background-color: #f55e2c;
     top: 1px; }
-  input[type="button"].large,
-  input[type="submit"].large,
-  input[type="reset"].large,
-  button.large,
-  .button.large {
-    letter-spacing: -0.025em; }
   input[type="button"].alt,
   input[type="submit"].alt,
   input[type="reset"].alt,
-  button.alt,
-  .button.alt {
+  button.alt {
     box-shadow: inset 0 0 0 1px #242424, inset 0 2px 1px 0 rgba(255, 255, 255, 0.2); }
     input[type="button"].alt:active,
     input[type="submit"].alt:active,
     input[type="reset"].alt:active,
-    button.alt:active,
-    .button.alt:active {
+    button.alt:active {
       background-color: #3f3f3f; }
 
 /* List */
@@ -914,7 +904,7 @@ ul.actions {
   text-align: center;
   padding: 2em; }
   .box.style1 {
-    padding: 3em 2em 3.5em 2em; }
+    padding: 3em 2em; }
     .box.style1 h3 {
       margin-bottom: 0.5em; }
   .box.style2 h3 {
@@ -1054,9 +1044,6 @@ body > article {
   .wrapper {
     padding: 3em 0 3em 0;
     text-align: center; }
-    .wrapper.style4 .row-special {
-      margin: 2em 0 0 0;
-      padding: 2em 0 2em 0; }
 
   /* Articles */
   #top {
@@ -1222,7 +1209,7 @@ body > article {
 header {
   background-color: #100e0c; }
 
-.row #promotion-box {
+#promotion-box {
   background-color: #490a29; }
 
 footer {
@@ -1437,23 +1424,11 @@ input[type=checkbox] {
     border: 3px solid #9b9b9b;
     background: none;
     padding: 1rem;
-    font-size: 1rem; }
-  .input-group .user-label {
-    position: absolute;
-    left: 15px;
-    pointer-events: none;
-    transform: translateY(1rem);
-    transition: 350ms;
-    color: #9b9b9b; }
+    font-size: 1rem;
+    color: white; }
   .input-group .text:focus,
   .input-group input:valid {
     outline: none;
     border: 2px solid #f55e2c; }
-  .input-group .text:focus ~ label,
-  .input-group input:valid ~ label {
-    transform: translateY(1000%) scale(1);
-    padding: 0 .2em;
-    color: #f55e2c;
-    background-color: #171311; }
 
 /*# sourceMappingURL=main.css.map */

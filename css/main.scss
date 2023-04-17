@@ -6,9 +6,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 $main-color: #f55e2c;
+$main-color-hover: #f56b41;
 $body-color: #171311;
 $body-sec-color: #100e0c;
-$main-font-size: clamp(1rem, calc(12px + 1vw), 24px);
+$font-color: #fff;
+$main-font-size: clamp(1rem, calc(12px + 1vw), 20px);
 $footer-font-size: 0.8em;
 $footer-font-color: #8a8a8a;
 
@@ -50,9 +52,10 @@ blockquote, q {
 }
 
 body {
-  color: #fff;
+  color: $font-color;
   line-height: 1;
   background-color: $body-color;
+  font-size: $main-font-size;
 }
 
 mark {
@@ -100,7 +103,7 @@ main {
 
 a {
   text-decoration: underline;
-  color: #fff;
+  color: $font-color;
 
   img {
     border: 0;
@@ -220,7 +223,6 @@ header {
     display: flex;
     align-items: center;
     text-align: left;
-    width: 90%;
     max-width: 100%;
 
     div {
@@ -347,8 +349,7 @@ header {
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
-button,
-.button {
+button {
   background-color: $main-color;
   -webkit-appearance: none;
   position: relative;
@@ -362,19 +363,16 @@ button,
   overflow: hidden;
   padding: 0.8em 2em;
   max-width: 24em;
+  color: $font-color;
 
 
   &:hover {
-    background-color: #f56b41;
+    background-color: $main-color-hover;
   }
 
   &:active {
     background-color: $main-color;
     top: 1px;
-  }
-
-  &.large {
-    letter-spacing: -0.025em;
   }
 
   &.alt {
@@ -433,7 +431,7 @@ ul.actions {
   padding: 2em;
 
   &.style1 {
-    padding: 3em 2em 3.5em 2em;
+    padding: 3em 2em;
 
     h3 {
       margin-bottom: 0.5em;
@@ -517,7 +515,7 @@ ul.actions {
   a {
     position: relative;
     display: block;
-    color: #fff;
+    color: $font-color;
     text-decoration: none;
     outline: 0;
     font-weight: 600;
@@ -636,13 +634,6 @@ body > article {
   .wrapper {
     padding: 3em 0 3em 0;
     text-align: center;
-
-    &.style4 {
-      .row-special {
-        margin: 2em 0 0 0;
-        padding: 2em 0 2em 0;
-      }
-    }
   }
 
   /* Articles */
@@ -863,9 +854,9 @@ body > article {
   #promotion-box {
     width: 100%;
 
-  .box {
-    width: 100%;
-  }
+    .box {
+      width: 100%;
+    }
 
   }
 }
@@ -906,7 +897,7 @@ header {
   background-color: $body-sec-color;
 }
 
-.row #promotion-box {
+#promotion-box {
   background-color: #490a29;
 }
 
@@ -1210,32 +1201,16 @@ input[type=checkbox] {
 
 
   .text {
-  border: 3px solid #9b9b9b;
-  background: none;
-  padding: 1rem;
-  font-size: 1rem;
-}
+    border: 3px solid #9b9b9b;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+  }
 
-.user-label {
-  position: absolute;
-  left: 15px;
-  pointer-events: none;
-  transform: translateY(1rem);
-  transition: 350ms;
-  color: #9b9b9b;
-}
-
-.text:focus,
-input:valid {
-  outline: none;
-  border: 2px solid $main-color;
-}
-
-.text:focus~label,
-input:valid~label {
-  transform: translateY(1000%) scale(1);
-  padding: 0 .2em;
-  color: $main-color;
-  background-color: $body-color;
-}
+  .text:focus,
+  input:valid {
+    outline: none;
+    border: 2px solid $main-color;
+  }
 }
