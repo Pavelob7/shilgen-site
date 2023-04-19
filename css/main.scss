@@ -13,6 +13,7 @@ $section-color: #490a29;
 $font-color: #fff;
 $main-font-size: clamp(1em, calc(12px + 1vw), 20px);
 $h1-font-size: clamp(2em, calc(20px + 1vw), 3.25em);
+$button-font-size: clamp(0.8em, calc(10px + 1vw), 16px);
 $footer-font-size: 0.8em;
 $footer-font-color: #8a8a8a;
 
@@ -198,6 +199,11 @@ header {
     &.medium {
       width: (960px * 1);
     }
+
+    .row {
+      justify-content: center;
+    }
+
   }
 
   @include breakpoint('<=medium') {
@@ -367,13 +373,14 @@ button {
   display: inline-block;
   text-decoration: none;
   font-weight: 700;
+  font-size: $button-font-size;
   border: 0;
   outline: 0;
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
   padding: 1em 2em;
-  margin: 0 0.2em;
+  margin: 0 0.2em 0.5em 0.2em;
   width: 24em;
   max-width: 90em;
   color: $font-color;
@@ -1089,33 +1096,51 @@ input[type=checkbox] {
   width: 5em;
 }
 
+
+/* steps */
+
 #steps-row {
   background-color: $section-color;
 
-
-  /* steps */
-
-  .my-flex-cont {
+  .image-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-
-
-  .my-flex-box {
-    margin: 5px;
-    flex: 3 1 auto;
-    border: 2px seagreen solid;
-    flex-basis: calc(50% - 10px);
-    max-width: 200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 25px;
   }
 
-    .arrow{
+  .image-with-text {
+    flex-basis: calc(20% - 5px);
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+  }
 
-    }
- img{
-      width: 80%;
-    }
-}
+  .image-with-text:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .image-with-text img {
+    width: 100%;
+    display: block;
+  }
+
+  .image-arrow-container {
+    flex-basis: 15%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+  }
+
+  .image-arrow {
+    height: 8em;
+    background-image: url('/images/steps/right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+  }
 
   p {
     width: 100%;

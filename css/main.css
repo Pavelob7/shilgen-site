@@ -124,7 +124,9 @@ header > p {
     .wide-row {
       width: 960px; }
       .wide-row.medium {
-        width: 960px; } }
+        width: 960px; }
+      .wide-row .row {
+        justify-content: center; } }
   @media screen and (max-width: 980px) {
     .wide-row {
       width: 100%; }
@@ -190,7 +192,8 @@ header > p {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  align-items: stretch; }
+  align-items: stretch;
+  justify-content: center; }
   .row > * {
     box-sizing: border-box; }
   .row.gtr-uniform > * > :last-child {
@@ -316,7 +319,8 @@ header > p {
       display: flex;
       flex-wrap: wrap;
       box-sizing: border-box;
-      align-items: stretch; }
+      align-items: stretch;
+      justify-content: center; }
       .row > * {
         box-sizing: border-box; }
       .row.gtr-uniform > * > :last-child {
@@ -442,7 +446,8 @@ header > p {
       display: flex;
       flex-wrap: wrap;
       box-sizing: border-box;
-      align-items: stretch; }
+      align-items: stretch;
+      justify-content: center; }
       .row > * {
         box-sizing: border-box; }
       .row.gtr-uniform > * > :last-child {
@@ -568,7 +573,8 @@ header > p {
       display: flex;
       flex-wrap: wrap;
       box-sizing: border-box;
-      align-items: stretch; }
+      align-items: stretch;
+      justify-content: center; }
       .row > * {
         box-sizing: border-box; }
       .row.gtr-uniform > * > :last-child {
@@ -694,7 +700,8 @@ header > p {
       display: flex;
       flex-wrap: wrap;
       box-sizing: border-box;
-      align-items: stretch; }
+      align-items: stretch;
+      justify-content: center; }
       .row > * {
         box-sizing: border-box; }
       .row.gtr-uniform > * > :last-child {
@@ -851,13 +858,14 @@ button {
   display: inline-block;
   text-decoration: none;
   font-weight: 700;
+  font-size: clamp(0.8em, calc(10px + 1vw), 16px);
   border: 0;
   outline: 0;
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
   padding: 1em 2em;
-  margin: 0 0.2em;
+  margin: 0 0.2em 0.5em 0.2em;
   width: 24em;
   max-width: 90em;
   color: #fff; }
@@ -1350,21 +1358,37 @@ input[type=checkbox] {
 .horn {
   width: 5em; }
 
+/* steps */
 #steps-row {
-  background-color: #490a29;
-  /* steps */ }
-  #steps-row .my-flex-cont {
+  background-color: #490a29; }
+  #steps-row .image-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center; }
-    #steps-row .my-flex-cont .my-flex-box {
-      margin: 5px;
-      flex: 3 1 auto;
-      border: 2px seagreen solid;
-      flex-basis: calc(50% - 10px);
-      max-width: 200px; }
-    #steps-row .my-flex-cont img {
-      width: 80%; }
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 25px; }
+  #steps-row .image-with-text {
+    flex-basis: calc(20% - 5px);
+    width: 20%;
+    float: left;
+    box-sizing: border-box; }
+  #steps-row .image-with-text:nth-child(2n) {
+    margin-right: 0; }
+  #steps-row .image-with-text img {
+    width: 100%;
+    display: block; }
+  #steps-row .image-arrow-container {
+    flex-basis: 15%;
+    height: 25%;
+    display: flex;
+    align-items: center; }
+  #steps-row .image-arrow {
+    height: 8em;
+    background-image: url("/images/steps/right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%; }
   #steps-row p {
     width: 100%; }
   #steps-row img {
