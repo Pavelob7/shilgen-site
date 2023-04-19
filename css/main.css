@@ -1351,19 +1351,20 @@ input[type=checkbox] {
   width: 5em; }
 
 #steps-row {
-  background-color: #9b9b9b;
+  background-color: #490a29;
   /* steps */ }
   #steps-row .my-flex-cont {
     display: flex;
     flex-flow: row wrap;
     justify-content: center; }
-  #steps-row .my-flex-box {
-    margin: 5px;
-    padding: 20px;
-    flex: 3 1 auto;
-    border: 2px seagreen solid;
-    flex-basis: calc(50% - 10px);
-    max-width: 200px; }
+    #steps-row .my-flex-cont .my-flex-box {
+      margin: 5px;
+      flex: 3 1 auto;
+      border: 2px seagreen solid;
+      flex-basis: calc(50% - 10px);
+      max-width: 200px; }
+    #steps-row .my-flex-cont img {
+      width: 80%; }
   #steps-row p {
     width: 100%; }
   #steps-row img {
@@ -1414,7 +1415,6 @@ input[type=checkbox] {
     top: 50px; }
 
 .input-group {
-  position: relative;
   width: 100%; }
   .input-group textarea {
     resize: none;

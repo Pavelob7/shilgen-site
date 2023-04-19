@@ -9,6 +9,7 @@ $main-color: #f55e2c;
 $main-color-hover: #f56b41;
 $body-color: #171311;
 $body-sec-color: #100e0c;
+$section-color: #490a29;
 $font-color: #fff;
 $main-font-size: clamp(1em, calc(12px + 1vw), 20px);
 $h1-font-size: clamp(2em, calc(20px + 1vw), 3.25em);
@@ -444,7 +445,7 @@ ul.actions {
 
   &.style1 {
     padding: 3em 2em;
-    background-color: #490a29;
+    background-color: $section-color;
 
     h3 {
       margin-bottom: 0.5em;
@@ -896,7 +897,7 @@ header {
 }
 
 #promotion-box {
-  background-color: #490a29;
+  background-color: $section-color;
   width: 100%;
 }
 
@@ -1089,7 +1090,7 @@ input[type=checkbox] {
 }
 
 #steps-row {
-  background-color: #9b9b9b;
+  background-color: $section-color;
 
 
   /* steps */
@@ -1098,17 +1099,23 @@ input[type=checkbox] {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-  }
+
 
   .my-flex-box {
     margin: 5px;
-    padding: 20px;
     flex: 3 1 auto;
     border: 2px seagreen solid;
     flex-basis: calc(50% - 10px);
     max-width: 200px;
   }
 
+    .arrow{
+
+    }
+ img{
+      width: 80%;
+    }
+}
 
   p {
     width: 100%;
@@ -1188,7 +1195,6 @@ input[type=checkbox] {
 }
 
 .input-group {
-  position: relative;
   width: 100%;
 
   textarea {
