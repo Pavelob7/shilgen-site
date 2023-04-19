@@ -13,7 +13,7 @@ $section-color: #490a29;
 $font-color: #fff;
 $main-font-size: clamp(1em, calc(12px + 1vw), 20px);
 $h1-font-size: clamp(2em, calc(20px + 1vw), 3.25em);
-$button-font-size: clamp(0.8em, calc(10px + 1vw), 16px);
+$button-font-size: clamp(0.5em, calc(10px + 1vw), 16px);
 $footer-font-size: 0.8em;
 $footer-font-color: #8a8a8a;
 
@@ -294,7 +294,7 @@ header {
   }
 }
 
-#top .container{
+#top .container {
   @include breakpoint('<=large') {
     width: 100%;
   }
@@ -1035,6 +1035,12 @@ input[type=checkbox] {
       margin-left: 0.5em;
       text-align: center;
     }
+
+    @include breakpoint('<=small') {
+      .footer-left .button {
+        width: 100%;
+      }
+    }
   }
 
   .footer-right {
@@ -1061,8 +1067,6 @@ input[type=checkbox] {
     li:nth-child(3):before {
       content: "E-mail";
     }
-
-
   }
 }
 
@@ -1124,6 +1128,7 @@ input[type=checkbox] {
   .image-with-text img {
     width: 100%;
     display: block;
+    margin-bottom: 1em;
   }
 
   .image-arrow-container {
@@ -1144,10 +1149,36 @@ input[type=checkbox] {
 
   p {
     width: 100%;
+    font-weight: bold;
   }
 
   img {
     width: 100%;
+  }
+
+  @include breakpoint('<=small') {
+
+    .image-container {
+      padding: 0;
+    }
+
+    .image-with-text {
+      flex-basis: 100%;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .image-with-text img {
+      width: 30%;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .image-arrow-container {
+      flex-basis: 0;
+      height: 0;
+    }
+
   }
 }
 
