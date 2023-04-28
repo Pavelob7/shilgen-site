@@ -246,6 +246,72 @@ header {
     }
 
   }
+
+  #brief-box {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 100%;
+    justify-content: space-between;
+
+    .text {
+      position: relative;
+      float: right;
+      width: 50%;
+    }
+
+    #brief-img {
+      width: 45%;
+      height: 100%;
+      max-width: 460px;
+    }
+
+    img {
+      position: absolute;
+      transform: translateY(-20%);
+      float: right;
+      width: 35%;
+      max-width: 460px;
+      image-rendering: pixelated;
+    }
+
+
+    a {
+      text-align: center;
+    }
+  }
+
+  @include breakpoint('<=medium') {
+
+    #brief-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .text {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+
+        h2 {
+          margin-bottom: 1em;
+        }
+      }
+
+      #brief-img {
+        width: 100%;
+        height: 70vw;
+        padding-bottom: 2%;
+      }
+
+      img {
+        transform: translateY(-20%);
+        width: 80%;
+      }
+    }
+  }
 }
 
 
@@ -367,7 +433,8 @@ header {
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
-button {
+button,
+.button {
   background-color: $main-color;
   -webkit-appearance: none;
   position: relative;
@@ -957,12 +1024,12 @@ input[type=checkbox] {
 }
 
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
-  border-color: #ff8962;
+  border-color: lighten($main-color, 10%);
 }
 
 .custom-checkbox:not(:disabled):active + label::before {
-  background-color: #ff8962;
-  border-color: #d57150;
+  background-color: lighten($main-color, 10%);
+  border-color: lighten($main-color, 5%);
 }
 
 .custom-checkbox:focus + label::before {
@@ -1199,6 +1266,7 @@ input[type=checkbox] {
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
+    color: $font-color;
   }
 
   .form__field::placeholder {
@@ -1267,7 +1335,7 @@ input[type=checkbox] {
     background: none;
     padding: 1rem;
     font-size: 1rem;
-    color: white;
+    color: $font-color;
   }
 
   .text:focus,
@@ -1340,6 +1408,11 @@ input[type=checkbox] {
 
   details summary {
     outline: 0;
+  }
+
+  summary #text {
+    width: 80%;
+    color: #242424;
   }
 
   details p {
